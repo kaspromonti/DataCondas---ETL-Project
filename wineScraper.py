@@ -62,6 +62,7 @@ for wine in range(len(wineTypes)):
 	browser.back()
 
 # Create DataFrame and export to csv
+browser.quit()
 wine_df = pd.DataFrame(wineList)
 wine_df.to_csv("wine_data.csv")
 print(wine_df)
